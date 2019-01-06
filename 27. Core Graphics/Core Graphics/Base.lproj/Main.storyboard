@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Core_Graphics" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NAn-Cw-Z24">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4p-p4-2yF">
+                                <rect key="frame" x="161" y="617" width="52" height="30"/>
+                                <state key="normal" title="Redraw"/>
+                                <connections>
+                                    <action selector="buttonRedrawTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0f3-JV-Qc5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NAn-Cw-Z24" firstAttribute="centerX" secondItem="C4p-p4-2yF" secondAttribute="centerX" id="9Qn-dr-fwM"/>
+                            <constraint firstItem="NAn-Cw-Z24" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="a56-dg-8Ry"/>
+                            <constraint firstItem="NAn-Cw-Z24" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gpj-zY-WNX"/>
+                            <constraint firstItem="NAn-Cw-Z24" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jZm-1j-PrA"/>
+                            <constraint firstAttribute="trailing" secondItem="NAn-Cw-Z24" secondAttribute="trailing" id="tCS-Cp-LVz"/>
+                            <constraint firstAttribute="bottom" secondItem="C4p-p4-2yF" secondAttribute="bottom" constant="20" symbolic="YES" id="xTg-9Z-VoJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="NAn-Cw-Z24" id="TbN-Dv-wUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
