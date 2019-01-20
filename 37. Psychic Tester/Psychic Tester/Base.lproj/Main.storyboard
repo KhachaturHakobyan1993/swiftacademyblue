@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Psychic_Tester" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O23-He-Ebw" customClass="GradientView" customModule="Psychic_Tester" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAM-lu-cQk">
+                                <rect key="frame" x="128" y="47" width="480" height="320"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="480" id="jma-0o-vj8"/>
+                                    <constraint firstAttribute="height" constant="320" id="wSi-e5-YoY"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pAM-lu-cQk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3m1-99-zvA"/>
+                            <constraint firstItem="pAM-lu-cQk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LnL-zQ-DjD"/>
+                            <constraint firstAttribute="bottom" secondItem="O23-He-Ebw" secondAttribute="bottom" id="eXP-6h-xKc"/>
+                            <constraint firstAttribute="trailing" secondItem="O23-He-Ebw" secondAttribute="trailing" id="jxA-8P-wf1"/>
+                            <constraint firstItem="O23-He-Ebw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rGq-q9-Gza"/>
+                            <constraint firstItem="O23-He-Ebw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="uYf-8W-oML"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardContainer" destination="pAM-lu-cQk" id="Uhg-4i-hQK"/>
+                        <outlet property="gradientView" destination="O23-He-Ebw" id="U8F-ne-c7H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.880059970015" y="117.59999999999999"/>
+        </scene>
+    </scenes>
+</document>
